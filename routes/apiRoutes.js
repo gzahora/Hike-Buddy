@@ -1,24 +1,42 @@
 var db = require("../models");
 
 module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+  // Get all parks (order by ranking)
+  app.get("/api/parks/rank", function(req, res) {
+    db.parks.findAll({ order: [["ranking", "DESC"]] }).then(function(dbparks) {
+      console.log(dbpars);
+      res.json(dbparks);
     });
   });
 
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
-    });
+  // Get all parks (order alphabetically)
+  app.get("/api/parks/alpha", function(req, res) {
+    db.parks
+      .findAll({ order: [["park_name", "DESC"]] })
+      .then(function(dbparks) {
+        console.log(dbpars);
+        res.json(dbparks);
+      });
   });
 
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
-    });
+  // Get parks by state
+  app.get("/api/parks/:state", function(req, res) {
+    db.parks
+      .findAll({ where: { state: req.params.state } })
+      .then(function(dbparks) {
+        console.log(dbpars);
+        res.json(dbparks);
+      });
   });
+
+  // Get parks by search
+  // app.get("/api/parks/:parkName", function(req, res) {
+  //   var parkName = req.params.parkName;
+  //   db.parks
+  //     .findAll({ where: { park_name: db.sequelize.where(db.sequelize.fn("LOWER", db.sequelize.col("park_name")), "LIKE", "%" + parkName + "%" } })
+  //     .then(function(dbparks) {
+  //       console.log(dbpars);
+  //       res.json(dbparks);
+  //     });
+  // });
 };
