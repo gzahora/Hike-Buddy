@@ -3,7 +3,7 @@ var db = require("../models");
 module.exports = function(app) {
   // Get all parks (order by ranking)
   app.get("/api/parks/rank", function(req, res) {
-    db.parks.findAll({ order: [["ranking", "ASC"]] }).then(function(dbparks) {
+    db.Park.findAll({ order: [["ranking", "ASC"]] }).then(function(dbparks) {
       console.log(dbparks);
       res.json(dbparks);
     });

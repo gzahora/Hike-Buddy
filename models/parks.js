@@ -1,5 +1,5 @@
 module.exports = function(sequelize, Sequelize) {
-  var Parks = sequelize.define("parks", {
+  var Park = sequelize.define("Park", {
     state: {
       type: Sequelize.STRING,
       allowNull: false
@@ -35,5 +35,5 @@ module.exports = function(sequelize, Sequelize) {
       defaultValue: false
     }
   });
-  return Parks;
+  return Park;
 };

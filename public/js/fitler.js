@@ -1,17 +1,17 @@
 $(function() {
-  $("#searchpark").on("click", function(event) {
-    event.preventDefault();
+  // $("#park").on("click", function(event) {
+  //   event.preventDefault();
 
-    var parkSearched = $("#searchbox")
-      .val()
-      .trim();
+  //   var parkSearched = $("#searchbox")
+  //     .val()
+  //     .trim();
 
-    $.get("/api/parks/:parkName" + parkSearched, function(data) {
-      renderParks(data);
-    });
-  });
+  //   $.get("/api/parks/:parkName" + parkSearched, function(data) {
+  //     renderParks(data);
+  //   });
+  // });
 
-  $("#searchState").on("click", function(event) {
+  $("#state").on("click", function(event) {
     event.preventDefault();
 
     var stateSearched = $("#searchbox")
@@ -23,7 +23,7 @@ $(function() {
     });
   });
 
-  $("#searchAlpha").on("click", function(event) {
+  $("#alpha").on("click", function(event) {
     event.preventDefault();
 
     var AlphaSearched = $("#searchbox")
@@ -35,7 +35,7 @@ $(function() {
     });
   });
 
-  $("#searchRank").on("click", function(event) {
+  $("#ranked").on("click", function(event) {
     event.preventDefault();
 
     var rankSearch = $("#searchbox")
@@ -48,20 +48,23 @@ $(function() {
   });
 
   function renderParks(data) {
-      $("#search-results").empty();
-      $("#search-results").show();
-    if (data.length >= 0 ) {
-        for (var i=0; i < data.length; i++) {
-            var div = $("<div");
-            div.addCard("_________");
-            div.append("");
-            div.append(""+data[i].parkName);
-        }
+    $("#search-results").empty();
+    $("#search-results").show();
+    if (data.length !== 0) {
+      for (var i = 0; i < data.length; i++) {
+        var div = $("<div>");
+        div.addClass("col-3 col-3 col-3 col-3");
+        div.append(
+          "<img src= '" + data[i].image + "' height='250' width='auto'>"
+        );
+        div.append("<h4>" + data[i].park_name + "</h4>");
+        div.append("<h6>" + data[i].state + "</h6>");
+        div.append("<h6>" + data[i].ranking + "</h6>");
+
         $("#search-results").append(div);
-            }
-        }
-    else {
-            $("#search-results").append("No results found");
-        }
+      }
+    } else {
+      $("#search-results").append("No results found");
     }
+  }
 });
