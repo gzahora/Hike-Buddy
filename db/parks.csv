@@ -1,0 +1,57 @@
+id,State,Park Name,Acres,Latitude,Longitude,Ranking
+1,ME,Acadia National Park,47390,44.35,-68.21,7
+2,UT,Arches National Park,76519,38.68,-109.57,17
+3,SD,Badlands National Park,242756,43.75,-102.5,25
+4,TX,Big Bend National Park,801163,29.25,-103.25,43
+5,FL,Biscayne National Park,172924,25.65,-80.08,40
+6,CO,Black Canyon of the Gunnison National Park,32950,38.57,-107.72,46
+7,UT,Bryce Canyon National Park,35835,37.57,-112.18,12
+8,UT,Canyonlands National Park,337598,38.2,-109.93,28
+9,UT,Capitol Reef National Park,241904,38.2,-111.17,22
+10,NM,Carlsbad Caverns National Park,46766,32.17,-104.44,41
+11,CA,Channel Islands National Park,249561,34.01,-119.42,44
+12,SC,Congaree National Park,26546,33.78,-80.78,51
+13,OR,Crater Lake National Park,183224,42.94,-122.1,29
+14,OH,Cuyahoga Valley National Park,32950,41.24,-81.55,13
+15,AK,Denali National Park and Preserve,3372402,63.33,-150.5,35
+16,"CA, NV",Death Valley National Park,4740912,36.24,-116.82,16
+17,FL,Dry Tortugas National Park,64701,24.63,-82.87,54
+18,FL,Everglades National Park,1508538,25.32,-80.93,34
+19,AK,Gates Of The Arctic National Park and Preserve,7523898,67.78,-153.3,61
+20,MT,Glacier National Park,1013572,48.8,-114,10
+21,AK,Glacier Bay National Park and Preserve,3224840,58.5,-137,33
+22,NV,Great Basin National Park,77180,38.98,-114.3,50
+23,AZ,Grand Canyon National Park,1217403,36.06,-112.14,2
+24,CO,Great Sand Dunes National Park and Preserve,42984,37.73,-105.51,42
+25,"TN, NC",Great Smoky Mountains National Park,521490,35.68,-83.53,1
+26,WY,Grand Teton National Park,309995,43.73,-110.8,8
+27,TX,Guadalupe Mountains National Park,86416,31.92,-104.87,49
+28,HI,Haleakala National Park,29094,20.72,-156.17,24
+29,HI,Hawaii Volcanoes National Park,323431,19.38,-155.2,23
+30,AR,Hot Springs National Park,5550,34.51,-93.05,19
+31,MI,Isle Royale National Park,571790,48.1,-88.55,58
+32,CA,Joshua Tree National Park,789745,33.79,-115.9,11
+33,AK,Katmai National Park and Preserve,3674530,58.5,-155,55
+34,AK,Kenai Fjords National Park,669983,59.92,-149.65,45
+35,AK,Kobuk Valley National Park,1750717,67.55,-159.28,59
+36,AK,Lake Clark National Park and Preserve,2619733,60.97,-153.42,60
+37,CA,Lassen Volcanic National Park,106372,40.49,-121.51,38
+38,KY,Mammoth Cave National Park,52830,37.18,-86.1,37
+39,CO,Mesa Verde National Park,52122,37.18,-108.49,36
+40,WA,Mount Rainier National Park,235625,46.85,-121.75,18
+41,WA,North Cascades National Park,504781,48.7,-121.2,56
+42,WA,Olympic National Park,922651,47.97,-123.5,9
+43,AZ,Petrified Forest National Park,93533,35.07,-109.78,32
+44,CA,Pinnacles National Park,26606,36.48,-121.16,48
+45,CA,Redwood National Park,112512,41.3,-124,39
+46,CO,Rocky Mountain National Park,265828,40.4,-105.58,3
+47,AZ,Saguaro National Park,91440,32.25,-110.5,26
+48,CA,Sequoia and Kings Canyon National Parks,865952,36.43,-118.68,21
+49,VA,Shenandoah National Park,199045,38.53,-78.35,20
+50,ND,Theodore Roosevelt National Park,70447,46.97,-103.45,27
+51,MN,Voyageurs National Park,218200,48.5,-92.88,47
+52,SD,Wind Cave National Park,28295,43.57,-103.48,31
+53,AK,Wrangell - St Elias National Park and Preserve,8323148,61,-142,53
+54,"WY, MT, ID",Yellowstone National Park,2219791,44.6,-110.5,5
+55,CA,Yosemite National Park,761266,37.83,-119.5,6
+56,UT,Zion National Park,146598,37.3,-113.05,4
