@@ -25,26 +25,20 @@
 
 <h2>National Parks: </h2>
 
-<div class="container text-center">
-    <div class="row">
-        <div class="col" id="mainContainer">
-            <h1><u>Park</u></h1>
-            <br>
-            {{#each parks}}
-            <div>
-                {{this.park_name}}
+{{#each parks}}
+<div class="containter">
+    <div class="col-4" style="float: left">
+        <div class="card my-2" style="width: 22rem; height: 24rem;">
+            <img src={{this.image}} class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{this.park_name}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Rank: {{this.ranking}}</h6>
+                <h6 class="card-subtitle mb-2 text-muted">State(s): {{this.state}}</h6>
+                <a href={{this.url}} class="card-link">Park Website</a>
+                &nbsp;&nbsp;
+                <a href={{this.map}} class="card-link">Hiking Guide</a>
             </div>
-            {{/each}}
-        </div>
-        <div class="col-2"></div>
-        <div class="col" id="mainContainer">
-            <h1><u>Rank</u></h1>
-            <br>
-            {{#each parks}}
-            <div>
-                {{this.ranking}}
-            </div>
-            {{/each}}
         </div>
     </div>
 </div>
+{{/each}}

@@ -13,11 +13,11 @@ module.exports = function(sequelize, Sequelize) {
       allowNull: false
     },
     latitude: {
-      type: Sequelize.INTEGER,
+      type: Sequelize.DECIMAL(8, 4),
       allowNull: false
     },
     longitude: {
-      type: Sequelize.INTEGER,
+      type: Sequelize.DECIMAL(8, 4),
       allowNull: false
     },
     ranking: {
@@ -33,6 +33,22 @@ module.exports = function(sequelize, Sequelize) {
       type: Sequelize.BOOLEAN,
       allowNull: false,
       defaultValue: false
+    },
+    image: {
+      type: Sequelize.TEXT,
+      allowNull: true
+    },
+    url: {
+      type: Sequelize.STRING,
+      allowNull: false
+    },
+    map: {
+      type: Sequelize.TEXT,
+      allowNull: true
+    },
+    short_name: {
+      type: Sequelize.STRING,
+      allowNull: false
     }
   });
   return Park;
