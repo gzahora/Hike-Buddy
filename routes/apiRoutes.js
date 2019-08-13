@@ -4,7 +4,7 @@ module.exports = function(app) {
   // Get all parks (order by ranking)
   app.get("/api/parks/rank", function(req, res) {
     db.parks.findAll({ order: [["ranking", "DESC"]] }).then(function(dbparks) {
-      console.log(dbpars);
+      console.log(dbparks);
       res.json(dbparks);
     });
   });
@@ -14,7 +14,7 @@ module.exports = function(app) {
     db.parks
       .findAll({ order: [["park_name", "DESC"]] })
       .then(function(dbparks) {
-        console.log(dbpars);
+        console.log(dbparks);
         res.json(dbparks);
       });
   });
@@ -24,7 +24,7 @@ module.exports = function(app) {
     db.parks
       .findAll({ where: { state: req.params.state } })
       .then(function(dbparks) {
-        console.log(dbpars);
+        console.log(dbparks);
         res.json(dbparks);
       });
   });
@@ -35,7 +35,7 @@ module.exports = function(app) {
   //   db.parks
   //     .findAll({ where: { park_name: db.sequelize.where(db.sequelize.fn("LOWER", db.sequelize.col("park_name")), "LIKE", "%" + parkName + "%" } })
   //     .then(function(dbparks) {
-  //       console.log(dbpars);
+  //       console.log(dbparks);
   //       res.json(dbparks);
   //     });
   // });
