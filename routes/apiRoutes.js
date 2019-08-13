@@ -36,7 +36,7 @@ module.exports = function(app) {
   //   db.parks
   //     .findAll({ where: { park_name: db.sequelize.where(db.sequelize.fn("LOWER", db.sequelize.col("park_name")), "LIKE", "%" + parkName + "%" } })
   //     .then(function(dbparks) {
-  //       console.log(dbpars);
+  //       console.log(dbparks);
   //       res.json(dbparks);
   //     });
   // });
