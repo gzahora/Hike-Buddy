@@ -52,6 +52,20 @@ module.exports = function(app) {
     res.render("search");
   });
 
+  // display searches in ranked order
+  app.get("/searchRanked", function(req, res) {
+    db.Park.findAll({ order: [["ranking", "ASC"]] }).then(function(dbparks) {
+      res.render("searchRanked", { parks: dbparks });
+    });
+  });
+
+  // display searches in alphabetical order
+  app.get("/searchAlpha", function(req, res) {
+    db.Park.findAll({ order: [["park_name", "ASC"]] }).then(function(dbparks) {
+      res.render("searchAlpha", { parks: dbparks });
+    });
+  });
+
   // Load profile page and pass in an example by id
   app.get("/signup", function(req, res) {
     res.render("signup");

@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightgreen">
+    <a class="navbar-brand" href="/profile">National Parks</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <ul class="nav nav-pills">
+                    <li><a class="btn btn-success" id="ranked" href="/searchRanked">All parks
+                            (ranked)</a>&nbsp;&nbsp;&nbsp;</li>
+                    <li><a class="btn btn-success" id="alpha" href="/searchAlpha">All parks
+                            (alphabetical)</a>&nbsp;&nbsp;&nbsp;</li>
+                    <li><a class="btn btn-success" id="state" href="searchState">Parks by state</a></li>
+                </ul>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<br>
+
+<h2>National Parks: </h2>
+
+
+{{#each parks}}
+<div class="containter">
+    <div class="col-4" style="float: left">
+        <div class="card my-2" style="width: 22rem; height: 24rem;">
+            <img src={{this.image}} class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{this.park_name}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Rank: {{this.ranking}}</h6>
+                <a href={{this.url}} class="card-link">Park Website</a>
+                &nbsp;&nbsp;
+                <a href={{this.map}} class="card-link">Hiking Guide</a>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}

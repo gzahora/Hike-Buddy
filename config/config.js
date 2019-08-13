@@ -3,7 +3,7 @@ module.exports = {
   development: {
     username: "root",
     password: process.env.PASSWORD,
-    database: "nationalParks",
+    database: "nationalparks",
     host: "localhost",
     dialect: "mysql"
   },
