@@ -60,7 +60,7 @@
 
 
 {{#each parks}}
-<div class="containter">
+<div class="containter ml-5">
     <div class="col-4" style="float: left">
         <div class="card my-2" style="width: 22rem; height: 24rem;">
             <img src={{this.image}} class="card-img-top" alt="..." style="width: 22rem; height: 14rem;">
@@ -68,9 +68,9 @@
                 <h5 class="card-title">{{this.park_name}}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Rank: {{this.ranking}}</h6>
                 <h6 class="card-subtitle mb-2 text-muted">State(s): {{this.state_name}}</h6>
-                <a href={{this.url}} class="card-link">Park Website</a>
+                <button class="btn btn-sm btn-success" href={{this.url}} class="card-link">Park Website</button>
                 &nbsp;&nbsp;
-                <a href={{this.map}} class="card-link">Hiking Guide/Park Map</a>
+                <button class="btn btn-sm btn-success" href={{this.map}} class="card-link">Hiking Guide/Park Map</button>
             </div>
         </div>
     </div>
