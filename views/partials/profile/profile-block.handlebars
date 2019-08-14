@@ -1,0 +1,483 @@
+<div class="mapContainer">
+    <div class="row">
+        <div class="col-md-8">
+            <div id="map">
+                <script>
+                    var map;
+                    var InforObj = [];
+                    var centerCords = {
+                        lat: 37.090,
+                        lng: -95.712
+                    };
+
+
+                    var markersOnMap = [{
+                        placeName: "Arcadia National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 44.35,
+                            lng: -68.21
+                        }]
+                    }, {
+                        placeName: "Arches National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 37.78,
+                            lng: -109.57
+                        }]
+                    }, {
+                        placeName: "Badlanda National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 43.75,
+                            lng: -102.5
+                        }]
+                    }, {
+                        placeName: "Big Bend National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 29.25,
+                            lng: -103.25
+                        }]
+                    }, {
+                        placeName: "Biscayne National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 25.65,
+                            lng: -80.08
+                        }]
+                    }, {
+                        placeName: "Black Canyon of the Gunnison National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 38.57,
+                            lng: -107.72
+                        }]
+                    }, {
+                        placeName: "Bryce Canyon National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 37.57,
+                            lng: -112.18
+                        }]
+                    }, {
+                        placeName: "Canyonlands National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 38.2,
+                            lng: -109.93
+                        }]
+                    }, {
+                        placeName: "Capitol Reef National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 38.2,
+                            lng: -111.17
+                        }]
+                    }, {
+                        placeName: "Carlsbad caverns National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 32.17,
+                            lng: -104.44
+                        }]
+                    }, {
+                        placeName: "Channel Islands National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 34.01,
+                            lng: -119.42
+                        }]
+                    }, {
+                        placeName: "Congaree National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 33.78,
+                            lng: -80.78
+                        }]
+                    }, {
+                        placeName: "Crater Lake National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 42.94,
+                            lng: -122.1
+                        }]
+                    }, {
+                        placeName: "Cuyahoga Valley National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 41.24,
+                            lng: -81.55
+                        }]
+                    }, {
+                        placeName: "Denali National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 63.33,
+                            lng: -150.5
+                        }]
+                    }, {
+                        placeName: "Death Valley National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 36.24,
+                            lng: -116.82
+                        }]
+                    }, {
+                        placeName: "Dry Tortugas National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 24.63,
+                            lng: -82.87
+                        }]
+                    }, {
+                        placeName: "Everglades National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 25.32,
+                            lng: -80.93
+                        }]
+                    }, {
+                        placeName: "Gates Of The Artic National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 67.78,
+                            lng: -153.3
+                        }]
+                    }, {
+                        placeName: "Glacier National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 48.8,
+                            lng: -114
+                        }]
+                    }, {
+                        placeName: "Glacier Bay National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 58.5,
+                            lng: -137
+                        }]
+                    }, {
+                        placeName: "Great Basin National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 38.98,
+                            lng: -114.3
+                        }]
+                    }, {
+                        placeName: "Grand Canyon National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 36.06,
+                            lng: -112.14
+                        }]
+                    }, {
+                        placeName: "Great Sand Dunes National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 37.73,
+                            lng: -105.51
+                        }]
+                    }, {
+                        placeName: "Great Smoky Mountians National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 35.68,
+                            lng: -83.53
+                        }]
+                    }, {
+                        placeName: "Grand Teton National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 43.73,
+                            lng: -110.8
+                        }]
+                    }, {
+                        placeName: "Guadalupe Mountains National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 31.92,
+                            lng: -104.87
+                        }]
+                    }, {
+                        placeName: "Haleakala Natioanl Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 20.72,
+                            lng: -156.17
+                        }]
+                    }, {
+                        placeName: "Hawaii Volcanos National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 19.38,
+                            lng: -155.2
+                        }]
+                    }, {
+                        placeName: "Hot Springs National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 34.51,
+                            lng: -93.05
+                        }]
+                    }, {
+                        placeName: "Isle Royale National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 48.01,
+                            lng: -88.55
+                        }]
+                    }, {
+                        placeName: "Joshua Tree National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 33.79,
+                            lng: -115.9
+                        }]
+                    }, {
+                        placeName: "Katmai National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 58.5,
+                            lng: -155
+                        }]
+                    }, {
+                        placeName: "Kenai Fjords National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 59.92,
+                            lng: -149.65
+                        }]
+                    }, {
+                        placeName: "Kobuk Valley National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 67.55,
+                            lng: -159.28
+                        }]
+                    }, {
+                        placeName: "Lake Clark National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 60.97,
+                            lng: -153.42
+                        }]
+                    }, {
+                        placeName: "Lassen Volcanic National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 39.929775,
+                            lng: -75.163714
+                        }]
+                    }, {
+                        placeName: "Mammoth Cave National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 37.18,
+                            lng: -86.1
+                        }]
+                    }, {
+                        placeName: "Mount Rainer National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 46.85,
+                            lng: -121.75
+                        }]
+                    }, {
+                        placeName: "North Cascades National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 48.7,
+                            lng: -121.2
+                        }]
+                    }, {
+                        placeName: "Olympic National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 47.97,
+                            lng: -123.5
+                        }]
+                    }, {
+                        placeName: "Pertified Forest National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 35.07,
+                            lng: -109.78
+                        }]
+                    }, {
+                        placeName: "Pinnacles National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 36.48,
+                            lng: -121.16
+                        }]
+                    }, {
+                        placeName: "Redwood National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 41.3,
+                            lng: -124
+                        }]
+                    }, {
+                        placeName: "Rocky Mountain National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 40.4,
+                            lng: -105.58
+                        }]
+                    }, {
+                        placeName: "Saguaro National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 32.25,
+                            lng: -110.5
+                        }]
+                    }, {
+                        placeName: "Sequoia and Kings Canyon National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 36.43,
+                            lng: -118.68
+                        }]
+                    }, {
+                        placeName: "Shenandoah National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 38.53,
+                            lng: -78.35
+                        }]
+                    }, {
+                        placeName: "Theodore Roosevelt National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 46.97,
+                            lng: -103.45
+                        }]
+                    }, {
+                        placeName: "Voyageurs National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 48.5,
+                            lng: -92.88
+                        }]
+                    }, {
+                        placeName: "Wind Cave National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 43.57,
+                            lng: -103.48
+                        }]
+                    }, {
+                        placeName: "Wrangell - St. Elias National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 61,
+                            lng: -142
+                        }]
+                    }, {
+                        placeName: "Gateway Arch National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 38.62,
+                            lng: -90.18
+                        }]
+                    }, {
+                        placeName: "Yellowstone National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 44.6,
+                            lng: -110.5
+                        }]
+                    }, {
+                        placeName: "Yosemite National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 37.83,
+                            lng: -119.5
+                        }]
+                    }, {
+                        placeName: "Zion National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 37.83,
+                            lng: -113.05
+                        }]
+                    }, {
+                        placeName: "Mesa Verde National Park",
+                        type: "park",
+                        LatLng: [{
+                            lat: 37.18,
+                            lng: -108.49
+                        }]
+                    }];
+
+                    //marker info
+                    function addMarker(icons) {
+                        for (var i = 0; i < markersOnMap.length; i++) {
+                            var contentString = '<div id="content"><h4>' + markersOnMap[i].placeName;
+                            // '</h4><p>' + markersOnMap[i].image + '</p></div>' + markersOnMap[i].phone + '</p></div>';
+
+                            const marker = new google.maps.Marker({
+                                position: markersOnMap[i].LatLng[0],
+                                icon: icons[markersOnMap[i].type].icon,
+                                map: map
+                            });
+
+                            const infowindow = new google.maps.InfoWindow({
+                                content: contentString,
+                                maxWidth: 200
+                            });
+
+                            marker.addListener('click', function () {
+                                closeOtherInfo();
+                                infowindow.open(marker.get('map'), marker);
+                                InforObj[0] = infowindow;
+                            });
+
+                        }
+                    }
+
+                    function closeOtherInfo() {
+                        if (InforObj.length > 0) {
+                            /* detach the info-window from the marker ... undocumented in the API docs */
+                            InforObj[0].set("marker", null);
+                            /* and close it */
+                            InforObj[0].close();
+                            /* blank the array */
+                            InforObj.length = 0;
+                        }
+                    }
+
+                    function initMap() {
+                        map = new google.maps.Map(
+                            document.getElementById('map'), {
+                                zoom: 3,
+                                center: centerCords
+                            });
+                        var iconBase = 'http://maps.google.com/mapfiles/kml/pal2/';
+
+                        var icons = {
+                            park: {
+                                icon: iconBase + 'icon4.png'
+                            }
+                        };
+                        addMarker(icons);
+                    }
+
+            // window.onload = function () {
+            //   initMap();
+            // };
+                </script>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdQjVD2kjflvYtoGQu8l5ThPuvUeDdQmM&callback=initMap">
+    </script>

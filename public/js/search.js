@@ -1,5 +1,3 @@
-console.log("test search.js");
-
 $(function() {
   $(".ranked").on("click", function(event) {
     event.preventDefault();

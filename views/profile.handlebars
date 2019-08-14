@@ -1,31 +1,64 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightgreen">
-  <a class="navbar-brand" href="home/html">National Parks</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Search by:
-        </a>
-        <div class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/searchRanked">Top Parks</a>
-          <a class="dropdown-item" href="/searchState">Location</a>
-          <a class="dropdown-item" href="/searchAlpha">Alphabetical</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Search yourself!</a>
-        </div>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
+    <a class="navbar-brand" href="/profile">National Parks</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li>
+                <ul class="nav nav-pills">
+                    <li><a class="btn btn-success" id="ranked" href="/searchRanked">All parks
+                            (ranked)</a>&nbsp;&nbsp;&nbsp;</li>
+                    <li><a class="btn btn-success" id="alpha" href="/searchAlpha">All parks
+                            (alphabetical)</a>&nbsp;&nbsp;&nbsp;</li>
+                    <div class="dropdown">
+                        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Parks by State
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/searchState/Alaska">Alaska</a>
+                            <a class="dropdown-item" href="/searchState/American Samoa">American Samoa</a>
+                            <a class="dropdown-item" href="/searchState/Arizona">Arizona</a>
+                            <a class="dropdown-item" href="/searchState/Arkansas">Arkansas</a>
+                            <a class="dropdown-item" href="/searchState/California">California</a>
+                            <a class="dropdown-item" href="/searchState/Colorado">Colorado</a>
+                            <a class="dropdown-item" href="/searchState/Florida">Florida</a>
+                            <a class="dropdown-item" href="/searchState/Hawaii">Hawaii</a>
+                            <a class="dropdown-item" href="/searchState/Indiana">Indiana</a>
+                            <a class="dropdown-item" href="/searchState/Kentucky">Kentucky</a>
+                            <a class="dropdown-item" href="/searchState/Maine">Maine</a>
+                            <a class="dropdown-item" href="/searchState/Michigan">Michigan</a>
+                            <a class="dropdown-item" href="/searchState/Minnesota">Minnesota</a>
+                            <a class="dropdown-item" href="/searchState/Missouri">Missouri</a>
+                            <a class="dropdown-item" href="/searchState/Montana">Montana</a>
+                            <a class="dropdown-item" href="/searchState/Nevada">Nevada</a>
+                            <a class="dropdown-item" href="/searchState/New Mexico">New Mexico</a>
+                            <a class="dropdown-item" href="/searchState/North Dakota">North Dakota</a>
+                            <a class="dropdown-item" href="/searchState/Ohio">Ohio</a>
+                            <a class="dropdown-item" href="/searchState/Oregon">Oregon</a>
+                            <a class="dropdown-item" href="/searchState/South Carolina">South Carolina</a>
+                            <a class="dropdown-item" href="/searchState/South Dakota">South Dakota</a>
+                            <a class="dropdown-item" href="/searchState/Texas">Texas</a>
+                            <a class="dropdown-item" href="/searchState/U.S. Virgin Islands">U.S. Virgin Islands</a>
+                            <a class="dropdown-item" href="/searchState/Utah">Utah</a>
+                            <a class="dropdown-item" href="/searchState/Virginia">Virginia</a>
+                            <a class="dropdown-item" href="/searchState/Washington">Washington</a>
+                            <a class="dropdown-item" href="/searchState/Wyoming">Wyoming</a>
+                            <a class="dropdown-item" href="/searchState/Tennessee">Tennessee</a>
+                        </div>
+                    </div>
+                </ul>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <a class="btn btn-lg btn-primary btn-block" type="submit" href="/signIn">Sign in</a>
+        </form>
+    </div>
 </nav>
+
+<br>
 
 <div class="container text-center">
   <div class="jumbotron py-1">
@@ -51,11 +84,12 @@
       <div class="row">
         <div class="col">
           <h4><u>Parks I've Visited</u></h4>
-          <img src="http://placehold.it/200x200" alt="" class="img-rounded img-responsive" />
-          {{#each park}}
-          {{#unless visited}}
-          {{> profile/profile-block available=true}}
-          {{/unless}}
+          {{#each parks}}
+            {{#if visited}}
+              <li>
+                {{this.park_name}}
+              <li>
+            {{/if}}
           {{/each}}
         </div>
       </div>
@@ -63,11 +97,12 @@
       <div class="row">
         <div class="col">
           <h4><u>Parks I Want to Visit</u></h4>
-          <img src="http://placehold.it/200x200" alt="" class="img-rounded img-responsive" />
-          {{#each park}}
-          {{#if visited}}
-          {{> profile/profile-block available=false}}
-          {{/if}}
+          {{#each parks}}
+            {{#if wishList}}
+              <li>
+                {{this.park_name}}
+              <li>
+            {{/if}}
           {{/each}}
         </div>
       </div>
