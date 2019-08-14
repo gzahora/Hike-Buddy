@@ -15,8 +15,8 @@ if (process.env.JAWSDB_URL) {
     user: "root",
     password: password.sql.password,
     database: "nationalParks"
-});
-};
+  });
+}
 
 // Make connection.
 connection.connect(function(err) {
