@@ -79,6 +79,11 @@ module.exports = function(app) {
     res.render("signup");
   });
 
+  // Load profile page and pass in an example by id
+  app.get("/signIn", function(req, res) {
+    res.render("signIn");
+  });
+
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
