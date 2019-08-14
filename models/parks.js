@@ -49,6 +49,10 @@ module.exports = function(sequelize, Sequelize) {
     short_name: {
       type: Sequelize.STRING,
       allowNull: false
+    },
+    state_name: {
+      type: Sequelize.STRING,
+      allowNull: false
     }
   });
   return Park;

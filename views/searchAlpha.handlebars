@@ -7,13 +7,48 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
+            <li>
                 <ul class="nav nav-pills">
                     <li><a class="btn btn-success" id="ranked" href="/searchRanked">All parks
                             (ranked)</a>&nbsp;&nbsp;&nbsp;</li>
                     <li><a class="btn btn-success" id="alpha" href="/searchAlpha">All parks
                             (alphabetical)</a>&nbsp;&nbsp;&nbsp;</li>
-                    <li><a class="btn btn-success" id="state" href="searchState">Parks by state</a></li>
+                    <div class="dropdown">
+                        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Parks by State
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/searchState/Alaska">Alaska</a>
+                            <a class="dropdown-item" href="/searchState/American Samoa">American Samoa</a>
+                            <a class="dropdown-item" href="/searchState/Arizona">Arizona</a>
+                            <a class="dropdown-item" href="/searchState/Arkansas">Arkansas</a>
+                            <a class="dropdown-item" href="/searchState/California">California</a>
+                            <a class="dropdown-item" href="/searchState/Colorado">Colorado</a>
+                            <a class="dropdown-item" href="/searchState/Florida">Florida</a>
+                            <a class="dropdown-item" href="/searchState/Hawaii">Hawaii</a>
+                            <a class="dropdown-item" href="/searchState/Indiana">Indiana</a>
+                            <a class="dropdown-item" href="/searchState/Kentucky">Kentucky</a>
+                            <a class="dropdown-item" href="/searchState/Maine">Maine</a>
+                            <a class="dropdown-item" href="/searchState/Michigan">Michigan</a>
+                            <a class="dropdown-item" href="/searchState/Minnesota">Minnesota</a>
+                            <a class="dropdown-item" href="/searchState/Missouri">Missouri</a>
+                            <a class="dropdown-item" href="/searchState/Montana">Montana</a>
+                            <a class="dropdown-item" href="/searchState/Nevada">Nevada</a>
+                            <a class="dropdown-item" href="/searchState/New Mexico">New Mexico</a>
+                            <a class="dropdown-item" href="/searchState/North Dakota">North Dakota</a>
+                            <a class="dropdown-item" href="/searchState/Ohio">Ohio</a>
+                            <a class="dropdown-item" href="/searchState/Oregon">Oregon</a>
+                            <a class="dropdown-item" href="/searchState/South Carolina">South Carolina</a>
+                            <a class="dropdown-item" href="/searchState/South Dakota">South Dakota</a>
+                            <a class="dropdown-item" href="/searchState/Texas">Texas</a>
+                            <a class="dropdown-item" href="/searchState/U.S. Virgin Islands">U.S. Virgin Islands</a>
+                            <a class="dropdown-item" href="/searchState/Utah">Utah</a>
+                            <a class="dropdown-item" href="/searchState/Virginia">Virginia</a>
+                            <a class="dropdown-item" href="/searchState/Washington">Washington</a>
+                            <a class="dropdown-item" href="/searchState/Wyoming">Wyoming</a>
+                            <a class="dropdown-item" href="/searchState/Tennessee">Tennessee</a>
+                        </div>
+                    </div>
                 </ul>
             </li>
         </ul>
@@ -36,6 +71,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{this.park_name}}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Rank: {{this.ranking}}</h6>
+                <h6 class="card-subtitle mb-2 text-muted">State(s): {{this.state_name}}</h6>
                 <a href={{this.url}} class="card-link">Park Website</a>
                 &nbsp;&nbsp;
                 <a href={{this.map}} class="card-link">Hiking Guide</a>

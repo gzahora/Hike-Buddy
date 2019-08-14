@@ -62,6 +62,18 @@ module.exports = function(app) {
     });
   });
 
+  // display searches by state
+  app.get("/searchState/:state", function(req, res) {
+    db.Park.findAll({
+      where: {
+        state_name: req.params.state
+      },
+      order: [["park_name", "ASC"]]
+    }).then(function(dbparks) {
+      res.render("searchState", { parks: dbparks });
+    });
+  });
+
   // Load profile page and pass in an example by id
   app.get("/signup", function(req, res) {
     res.render("signup");
