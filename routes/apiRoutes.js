@@ -3,7 +3,7 @@ var db = require("../models");
 module.exports = function(app) {
   // Get all parks (order by ranking)
   app.get("/api/parks/rank", function(req, res) {
-    db.parks.findAll({ order: [["ranking", "DESC"]] }).then(function(dbparks) {
+    db.Park.findAll({ order: [["ranking", "ASC"]] }).then(function(dbparks) {
       console.log(dbparks);
       res.json(dbparks);
     });
@@ -11,18 +11,19 @@ module.exports = function(app) {
 
   // Get all parks (order alphabetically)
   app.get("/api/parks/alpha", function(req, res) {
-    db.parks
-      .findAll({ order: [["park_name", "DESC"]] })
-      .then(function(dbparks) {
-        console.log(dbparks);
-        res.json(dbparks);
-      });
+    db.parks.findAll({ order: [["park_name", "ASC"]] }).then(function(dbparks) {
+      console.log(dbparks);
+      res.json(dbparks);
+    });
   });
 
   // Get parks by state
   app.get("/api/parks/:state", function(req, res) {
     db.parks
-      .findAll({ where: { state: req.params.state } })
+      .findAll({
+        order: [["park_name", "ASC"]],
+        where: { state: req.params.state }
+      })
       .then(function(dbparks) {
         console.log(dbparks);
         res.json(dbparks);
