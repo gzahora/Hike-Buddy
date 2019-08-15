@@ -1,11 +1,90 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(63, 31, 1); ">
+     <img style="height: 100px" src="https://www.nps.gov/cabr/blogs/images/Arrowhead_3.png">
+    <a style="font-family: 'Quicksand', sans-serif; font-size: 40px; font-style: bolder; color: white"
+    class="navbar-brand" href="/profile">National Parks</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    {{!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li>
+                <ul class="nav nav-pills">
+                    <li><a style="background-color:rgb(1, 71, 1); color: white; " class="btn btn-md" id="ranked" href="/searchRanked">All parks
+                            (ranked)</a>&nbsp;&nbsp;&nbsp;</li>
+                    <li><a style="background-color:rgb(1, 71, 1); color: white; " class="btn btn-success" id="alpha" href="/searchAlpha">All parks
+                            (alphabetical)</a>&nbsp;&nbsp;&nbsp;</li>
+                    <div class="dropdown">
+                        <button style="background-color:rgb(1, 71, 1); color: white; " class="btn btn-md dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Parks by State
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/searchState/Alaska">Alaska</a>
+                            <a class="dropdown-item" href="/searchState/American Samoa">American Samoa</a>
+                            <a class="dropdown-item" href="/searchState/Arizona">Arizona</a>
+                            <a class="dropdown-item" href="/searchState/Arkansas">Arkansas</a>
+                            <a class="dropdown-item" href="/searchState/California">California</a>
+                            <a class="dropdown-item" href="/searchState/Colorado">Colorado</a>
+                            <a class="dropdown-item" href="/searchState/Florida">Florida</a>
+                            <a class="dropdown-item" href="/searchState/Hawaii">Hawaii</a>
+                            <a class="dropdown-item" href="/searchState/Indiana">Indiana</a>
+                            <a class="dropdown-item" href="/searchState/Kentucky">Kentucky</a>
+                            <a class="dropdown-item" href="/searchState/Maine">Maine</a>
+                            <a class="dropdown-item" href="/searchState/Michigan">Michigan</a>
+                            <a class="dropdown-item" href="/searchState/Minnesota">Minnesota</a>
+                            <a class="dropdown-item" href="/searchState/Missouri">Missouri</a>
+                            <a class="dropdown-item" href="/searchState/Montana">Montana</a>
+                            <a class="dropdown-item" href="/searchState/Nevada">Nevada</a>
+                            <a class="dropdown-item" href="/searchState/New Mexico">New Mexico</a>
+                            <a class="dropdown-item" href="/searchState/North Dakota">North Dakota</a>
+                            <a class="dropdown-item" href="/searchState/Ohio">Ohio</a>
+                            <a class="dropdown-item" href="/searchState/Oregon">Oregon</a>
+                            <a class="dropdown-item" href="/searchState/South Carolina">South Carolina</a>
+                            <a class="dropdown-item" href="/searchState/South Dakota">South Dakota</a>
+                            <a class="dropdown-item" href="/searchState/Texas">Texas</a>
+                            <a class="dropdown-item" href="/searchState/U.S. Virgin Islands">U.S. Virgin Islands</a>
+                            <a class="dropdown-item" href="/searchState/Utah">Utah</a>
+                            <a class="dropdown-item" href="/searchState/Virginia">Virginia</a>
+                            <a class="dropdown-item" href="/searchState/Washington">Washington</a>
+                            <a class="dropdown-item" href="/searchState/Wyoming">Wyoming</a>
+                            <a class="dropdown-item" href="/searchState/Tennessee">Tennessee</a>
+                        </div>
+                    </div>
+                </ul>
+            </li>
+        </ul> --}}
+    </div>
+</nav>
+<br>
+
+{{!-- <h2 style="margin-left: 100px; font-family: 'Quicksand', sans-serif; font-size: 40px; color: rgb(63, 31, 1)";>National Parks: </h2> --}}
 <div class="container">
-    <form id="signin" name="signin" method="post" action="signin">
-        <label for="email">Email Address</label>
-        <input class="text" name="email" type="text" />
-        <label for="password">Password</label>
-        <input name="password" type="password" />
-        <input class="btn" type="submit" value="Sign In" />
-    </form>
+    <br>
+    <br>
+  <div style="height: 300px; width: 300px; margin-left: 450px; background: rgb(63, 31, 1); color: white;" class="card text-center">
+    <form class="form-signin" method="post" action="/signin">
+          <h2 class="form-signin-heading">Please sign in</h2>
+          <br>
+          <label for="email" class="text">Email Address</label>
+          <input type="email" id="email" name="email" class="text" placeholder="Email address" required autofocus>
+          <br>
+          <label for="password" class="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+          <br>
+        
+          <input class="btn" type="submit" value="Sign In" />
+          ​
+          <div class="card-footer ">
+            <div class="d-flex justify-content-center links">
+              Don't have an account yet?<a href="/signup">Sign Up</a>
+            </div>
+            <div class="d-flex justify-content-center">
+              <a href="#">Forgot your password?</a>
+            </div>
+          </div>
+        </form>
+    </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -16,8 +95,3 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <br>
 <br>
-<footer class="footer">
-    <div class="container">
-        <span class="text-muted">Copyright: @____________</span>
-    </div>
-</footer>
