@@ -1,5 +1,5 @@
 module.exports = function(sequelize, Sequelize) {
-  var Park = sequelize.define("park", {
+  var Park = sequelize.define("Park", {
     state: {
       type: Sequelize.STRING,
       allowNull: false
