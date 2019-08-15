@@ -17,7 +17,10 @@ if (process.env.JAWSDB_URL) {
     database: "nationalParks"
   });
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 025a0164c47059caf3ef1bc8053c13a54535220a
 // Make connection.
 connection.connect(function(err) {
   if (err) {
