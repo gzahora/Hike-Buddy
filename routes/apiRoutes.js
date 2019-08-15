@@ -11,7 +11,7 @@ module.exports = function(app) {
 
   // Get all parks (order alphabetically)
   app.get("/api/parks/alpha", function(req, res) {
-    db.parks.findAll({ order: [["park_name", "ASC"]] }).then(function(dbparks) {
+    db.Park.findAll({ order: [["park_name", "ASC"]] }).then(function(dbparks) {
       console.log(dbparks);
       res.json(dbparks);
     });
@@ -19,15 +19,13 @@ module.exports = function(app) {
 
   // Get parks by state
   app.get("/api/parks/:state", function(req, res) {
-    db.parks
-      .findAll({
-        order: [["park_name", "ASC"]],
-        where: { state: req.params.state }
-      })
-      .then(function(dbparks) {
-        console.log(dbparks);
-        res.json(dbparks);
-      });
+    console.log(req.params.state);
+    db.Park.findAll({
+      // order: [["park_name", "ASC"]],
+      where: { state_name: req.params.state }
+    }).then(function(dbparks) {
+      res.json(dbparks);
+    });
   });
 
   app.get("/auth", function(req, res) {

@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS nationlParks_db;
-CREATE DATABASE nationlParks_db;
-USE nationlParks_db;
+DROP DATABASE IF EXISTS nationalparks;
+CREATE DATABASE nationalparks;
+USE nationalparks;
 
 CREATE TABLE parks
 (
