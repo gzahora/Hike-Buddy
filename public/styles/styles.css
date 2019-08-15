@@ -45,7 +45,8 @@
     /* Set the fixed height of the footer here */
     height: 60px;
     line-height: 60px; /* Vertically center the text there */
-    background-color: #f5f5f5;
+    background-color: rgb(63, 31, 1);
+    text-align: center;
   }
 
   @media screen and (max-width: 300px) {
@@ -64,6 +65,22 @@
   .card {
     background-image: url("https://cdn2.vectorstock.com/i/1000x1000/94/76/topography-background-vector-2029476.jpg"); border: 2px solid rgb(1, 71, 1);
   }
+  body{
+    
+    background-color: #ffeecc;
+    background-image: url('/images/editedArrowhead_3.png');
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 800px;
+    background-repeat: no-repeat;
+  
+    font-family: 'Quicksand', sans-serif;
+  }
+  .span{
+   font: rgb(230, 194, 140);
+   text-align: center;
+  }
+  
 
 
 
