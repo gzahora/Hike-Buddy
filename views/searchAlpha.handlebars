@@ -1,5 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightgreen">
-    <a class="navbar-brand" href="/profile">National Parks</a>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(63, 31, 1); ">
+     <img style="height: 100px" src="https://www.nps.gov/cabr/blogs/images/Arrowhead_3.png">
+    <a style="font-family: 'Quicksand', sans-serif; font-size: 40px; font-style: bolder; color: white"
+    class="navbar-brand" href="/profile">National Parks</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -9,12 +11,12 @@
         <ul class="navbar-nav mr-auto">
             <li>
                 <ul class="nav nav-pills">
-                    <li><a class="btn btn-success" id="ranked" href="/searchRanked">All parks
+                    <li><a style="background-color:rgb(1, 71, 1); color: white; " class="btn btn-md" id="ranked" href="/searchRanked">All parks
                             (ranked)</a>&nbsp;&nbsp;&nbsp;</li>
-                    <li><a class="btn btn-success" id="alpha" href="/searchAlpha">All parks
+                    <li><a style="background-color:rgb(1, 71, 1); color: white; " class="btn btn-success" id="alpha" href="/searchAlpha">All parks
                             (alphabetical)</a>&nbsp;&nbsp;&nbsp;</li>
                     <div class="dropdown">
-                        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button style="background-color:rgb(1, 71, 1); color: white; " class="btn btn-md dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Parks by State
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -56,13 +58,13 @@
 </nav>
 <br>
 
-<h2>National Parks: </h2>
+<h2 style="margin-left: 100px; font-family: 'Quicksand', sans-serif; font-size: 40px; color: rgb(63, 31, 1)";>National Parks: </h2>
 
 
 {{#each parks}}
 <div class="containter ml-5">
     <div class="col-4" style="float: left">
-        <div class="card my-2" style="width: 22rem; height: 24rem;">
+        <div class="card my-2" style="width: 22rem; height: 24rem;  background-image: url('https://cdn2.vectorstock.com/i/1000x1000/94/76/topography-background-vector-2029476.jpg'); border: 2px solid rgb(1, 71, 1);">
             <img src={{this.image}} class="card-img-top" alt="..." style="width: 22rem; height: 14rem;">
             <div class="card-body">
                 <h5 class="card-title">{{this.park_name}}</h5>

@@ -1,7 +1,7 @@
 body {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #eee;
+  background-color: blanchedalmond;
 }
 
 .form-signin {
@@ -52,4 +52,7 @@ body {
     .cancelbtn, .signupbtn {
       width: 100%;
     }
+  }
+  body{
+    background-image: url("https://us.123rf.com/450wm/parmenov/parmenov1802/parmenov180200067/95660948-topographic-map-lines-earth-relief-contour-background-geographic-grid-elevation-map-vector-abstract-.jpg?ver=6");
   }
