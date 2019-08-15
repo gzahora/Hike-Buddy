@@ -28,6 +28,21 @@ module.exports = function(app) {
     });
   });
 
+  app.get("/auth", function(req, res) {
+    db.Account.findOne({
+      where: {
+        username: req.body.username,
+        password: req.body.password
+      }
+    }).then(function(data) {
+      if (data.length > 0) {
+        res.redirect("profile");
+      } else {
+        res.redirect("index");
+      }
+    });
+  });
+
   // Get parks by search
   // app.get("/api/parks/:parkName", function(req, res) {
   //   var parkName = req.params.parkName;

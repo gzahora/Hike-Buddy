@@ -11,6 +11,10 @@ $(function() {
   //   });
   // });
 
+  $("#sign-in").on("click", function(event) {
+    event.preventDefault();
+    var login = $("")
+  })
   $("#state").on("click", function(event) {
     event.preventDefault();
 

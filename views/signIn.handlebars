@@ -1,29 +1,11 @@
-<div style="background:blanchedalmond"; class="container">
-    <form class="form-signin">
-          <h2 class="form-signin-heading">Please sign in</h2>
-          <br>
-          <label for="inputEmail" class="sr-only">Email address</label>
-          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-          <br>
-          <label for="inputPassword" class="sr-only">Password</label>
-          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-          <br>
-          {{!-- <div class="checkbox">
-            <label>
-              <input type="checkbox" value="remember-me"> Remember me
-            </label>
-          </div> --}}
-          <a class="btn btn-lg btn-primary btn-block" type="sign-in" href="/profile">Sign in</a>
-          ​
-          <div class="card-footer ">
-            <div class="d-flex justify-content-center links">
-              Don't have an account yet?<a href="/signup">Sign Up</a>
-            </div>
-            <div class="d-flex justify-content-center">
-              <a href="#">Forgot your password?</a>
-            </div>
-          </div>
-        </form>
+<div class="container">
+    <form id="signin" name="signin" method="post" action="signin">
+        <label for="email">Email Address</label>
+        <input class="text" name="email" type="text" />
+        <label for="password">Password</label>
+        <input name="password" type="password" />
+        <input class="btn" type="submit" value="Sign In" />
+    </form>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

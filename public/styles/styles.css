@@ -81,3 +81,39 @@
    text-align: center;
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .carousel-item {
+    height: 100vh;
+    background: no-repeat center;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+    background-size: cover;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+ }
+
+ .signIn {
+  background-color:rgb(1, 71, 1); 
+  color: white;
+}
+
+.welcome {
+  margin-top: 200px;
+}
