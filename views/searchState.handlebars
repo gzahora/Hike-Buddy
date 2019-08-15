@@ -1,5 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightgreen">
-    <a class="navbar-brand" href="/profile">National Parks</a>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(63, 31, 1);">
+    <img style="height: 100px" src="https://www.nps.gov/cabr/blogs/images/Arrowhead_3.png">
+    <a  style="font-family: 'Quicksand', sans-serif; font-size: 40px; font-style: bolder; color: white" class="navbar-brand" href="/">National Parks</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -9,10 +10,10 @@
         <ul class="navbar-nav mr-auto">
             <li>
                 <ul class="nav nav-pills">
-                    <li><a class="btn btn-success" id="ranked" href="/searchRanked">All parks (ranked)</a>&nbsp;&nbsp;&nbsp;</li>
-                    <li><a class="btn btn-success" id="alpha" href="/searchAlpha">All parks (alphabetical)</a>&nbsp;&nbsp;&nbsp;</li>
+                    <li><a style="background-color:rgb(1, 71, 1); color: white;" class="btn btn-md" id="ranked" href="/searchRanked">All parks (ranked)</a>&nbsp;&nbsp;&nbsp;</li>
+                    <li><a style="background-color:rgb(1, 71, 1); color: white;" class="btn btn-md" id="alpha" href="/searchAlpha">All parks (alphabetical)</a>&nbsp;&nbsp;&nbsp;</li>
                     <div class="dropdown">
-                        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button style="background-color:rgb(1, 71, 1); color: white;" class="btn btn-md dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Parks by State
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -50,28 +51,24 @@
                 </ul>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
     </div>
 </nav>
 <br>
 
-<h2>National Parks: </h2>
+<h2 style="margin-left: 100px; font-family: 'Quicksand', sans-serif; font-size: 40px; color: rgb(63, 31, 1)">National Parks: </h2>
 
 {{#each parks}}
-<div class="containter">
+<div class="containter ml-5">
     <div class="col-4" style="float: left">
         <div class="card my-2" style="width: 22rem; height: 24rem;">
-            <img src={{this.image}} class="card-img-top" alt="...">
+            <img src={{this.image}} class="card-img-top" alt="..." style="width: 21.8rem; height: 14rem;">
             <div class="card-body">
                 <h5 class="card-title">{{this.park_name}}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Rank: {{this.ranking}}</h6>
                 <h6 class="card-subtitle mb-2 text-muted">State(s): {{this.state_name}}</h6>
-                <a href={{this.url}} class="card-link">Park Website</a>
+                <a class="btn btn-sm btn-success" href={{this.url}} class="card-link">Park Website</a>
                 &nbsp;&nbsp;
-                <a href={{this.map}} class="card-link">Hiking Guide</a>
+                <a class="btn btn-sm btn-success" href={{this.map}} class="card-link">Hiking Guide/Park Map</a>
             </div>
         </div>
     </div>

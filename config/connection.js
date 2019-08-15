@@ -17,7 +17,6 @@ if (process.env.JAWSDB_URL) {
     database: "nationalParks"
   });
 }
-
 // Make connection.
 connection.connect(function(err) {
   if (err) {

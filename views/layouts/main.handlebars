@@ -16,14 +16,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="public/styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery.js"></script>
     <style type="text/css">
         html,
         body {
             overflow-x: hidden;
+        },
+        #map {
+            height: 600px;
+            width: 100%;
         }
     </style>
     <title>Hike Buddy</title>
@@ -31,6 +35,9 @@
 
 <body>
     {{{body}}}
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdQjVD2kjflvYtoGQu8l5ThPuvUeDdQmM&callback=initMap">
+    </script>
 </body>
 
 </html>

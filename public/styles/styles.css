@@ -1,7 +1,7 @@
-body {
+/* body {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #eee;
+  background-color: blanchedalmond;
 }
 
 .form-signin {
@@ -36,10 +36,10 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}
+} */
 
 .footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
@@ -53,3 +53,50 @@ body {
       width: 100%;
     }
   }
+  /* body{
+    background-color: blanchedalmond;
+    background-image: url("https://www.nps.gov/cabr/blogs/images/Arrowhead_3.png");
+    margin-left: 500px; 
+    height: 700px; 
+    opacity: .05;
+  } */
+
+  .card {
+    background-image: url("https://cdn2.vectorstock.com/i/1000x1000/94/76/topography-background-vector-2029476.jpg"); border: 2px solid rgb(1, 71, 1);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .carousel-item {
+    height: 100vh;
+    background: no-repeat center;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+    background-size: cover;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+ }
+
+ .signIn {
+  background-color:rgb(1, 71, 1); 
+  color: white;
+}
+
+.welcome {
+  margin-top: 200px;
+}
