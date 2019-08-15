@@ -39,7 +39,7 @@
 } */
 
 .footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
@@ -64,3 +64,39 @@
   .card {
     background-image: url("https://cdn2.vectorstock.com/i/1000x1000/94/76/topography-background-vector-2029476.jpg"); border: 2px solid rgb(1, 71, 1);
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .carousel-item {
+    height: 100vh;
+    background: no-repeat center;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+    background-size: cover;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+ }
+
+ .signIn {
+  background-color:rgb(1, 71, 1); 
+  color: white;
+}
+
+.welcome {
+  margin-top: 200px;
+}
