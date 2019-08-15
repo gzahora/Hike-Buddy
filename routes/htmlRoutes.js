@@ -7,26 +7,6 @@ module.exports = function(app) {
     res.render("index");
   });
 
-  // app.post("/", function(request, response) {
-  //   var username = request.body.username;
-  //   var password = request.body.password;
-  //   if (username && password) {
-  //     connection.query('SELECT * FROM accounts WHERE username = ? AND password = ?', [username, password], function(error, results, fields) {
-  //       if (results.length > 0) {
-  //         request.session.loggedin = true;
-  //         request.session.username = username;
-  //         response.redirect("profile");
-  //       } else {
-  //         response.send('Incorrect Username and/or Password!');
-  //       }
-  //       response.end();
-  //     });
-  //   } else {
-  //     response.send('Please enter Username and Password!');
-  //     response.end();
-  //   }
-  // });
-
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(
@@ -38,10 +18,10 @@ module.exports = function(app) {
     });
   });
 
-  // Load profile page and pass in an example by id
-  app.get("/profile", function(req, res) {
-    res.render("profile");
-  });
+  // // Load profile page and pass in an example by id
+  // app.get("/profile", function(req, res) {
+  //   res.render("profile");
+  // });
 
   // Load profile page and pass in an example by id
   app.get("/search", function(req, res) {
@@ -75,9 +55,13 @@ module.exports = function(app) {
   });
 
   // Load profile page and pass in an example by id
-  app.get("/signup", function(req, res) {
-    res.render("signup");
-  });
+  // app.get("/signup", function(req, res) {
+  //   res.render("signup");
+  // });
+
+  // app.get("/signin", function(req, res) {
+  //   res.render("signin");
+  // });
 
   // Load profile page and pass in an example by id
   app.get("/signIn", function(req, res) {
