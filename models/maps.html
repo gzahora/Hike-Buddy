@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Custom Markers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(
+            document.getElementById('map'),
+            {center: new google.maps.LatLng(41.850033, -87.6500523), 
+            zoom: 4
+          });
+
+        var iconBase =
+            'http://maps.google.com/mapfiles/kml/pal2/';
+
+        var icons = {
+          park: {
+            icon: iconBase + 'icon4.png'
+          },
+          library: {
+            icon: iconBase + 'library_maps.png'
+          },
+          info: {
+            icon: iconBase + 'info-i_maps.png'
+          }
+        };
+
+        var features = [
+          {
+            placeName: "Arcadia NP",
+            position: new google.maps.LatLng(44.35, -68.21),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(38.68, -109.57),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(43.75, -102.5),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(29.25, -103.25),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(25.65, -80.08),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(38.57, -107.72),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(37.57, -112.18),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(38.2, -109.93),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(38.2, -111.17),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(32.17, -104.44),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(34.01, -119.42),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(33.78, -80.79),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(42.94, -122.1),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(41.24, -81.55),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(63.33, -150.5),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(36.24, -116.82),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(24.63, -82.87),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(25.32, -80.93),
+            type: 'park'
+          },{
+            position: new google.maps.LatLng(67.78, -153.3),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(48.8, -114),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(58.5, -137),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(38.98, -114.3),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(36.06, -112.14),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(37.73, -105.51),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(35.68, -83.53),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(31.92, -104.87),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(20.72, -156.17),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(19.38, -155.2),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(34.51, -93.05),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(48.1, -88.55),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(33.79, -115.9),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(58.5, -155),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(59.92, -149.65),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(67.55, -159.28),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(60.97, -153.42),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(40.49, -121.75),
+            type: 'park'
+          },{
+            position: new google.maps.LatLng(37.18, -86.1),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(37.18, -1008.49),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(46.85, -121.75),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(48.5, -92.88),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(43.57, -103.48),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(61, -142),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(44.6, -110.5),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(37.83, -119.5),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(37.3, -113.05),
+            type: 'park'
+          }, {
+            position: new google.maps.LatLng(67.78, -153.3),
+            type: 'park'
+          }
+        ];
+
+        // Create markers.
+        for (var i = 0; i < features.length; i++) {
+          var marker = new google.maps.Marker({
+            position: features[i].position,
+            icon: icons[features[i].type].icon,
+            map: map
+          });
+        };
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdQjVD2kjflvYtoGQu8l5ThPuvUeDdQmM&callback=initMap">
+    </script>
+  </body>
+</html>

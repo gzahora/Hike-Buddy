@@ -4,115 +4,493 @@
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  ​
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Search by:
-        </a>
-        <div class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Top Parks</a>
-          <a class="dropdown-item" href="#">Location</a>
-          <a class="dropdown-item" href="#">Alphabetical</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Search yourself!</a>
-        </div>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
 </nav>
-<br>
-​
-<div class="container">
-  <div class="row">
-    <div class="col-6">
-      <div class="row">
-        <form class="form-signin">
-          <h2 class="form-signin-heading">Please sign in</h2>
-          <br>
-          <label for="inputEmail" class="sr-only">Email address</label>
-          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-          <br>
-          <label for="inputPassword" class="sr-only">Password</label>
-          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-          <br>
-          {{!-- <div class="checkbox">
-            <label>
-              <input type="checkbox" value="remember-me"> Remember me
-            </label>
-          </div> --}}
-          <a class="btn btn-lg btn-primary btn-block" type="sign-in" href="/profile">Sign in</a>
-          ​
-          <div class="card-footer ">
-            <div class="d-flex justify-content-center links">
-              Don't have an account yet?<a href="/signup">Sign Up</a>
-            </div>
-            <div class="d-flex justify-content-center">
-              <a href="#">Forgot your password?</a>
-            </div>
-          </div>
-        </form>
+
+<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+    <!-- Slide One - Set the background image for this slide in the line below -->
+    <div class="carousel-item active"
+      style="background-image: url('https://newengland.com/wp-content/uploads/acadia-national-park-camping-780x585.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3>
+        <br>
+        <a class="btn btn-lg signIn" type="submit" href="/signIn">Sign
+          in</a>
       </div>
-      <br>
-      <div class="row">
-        <h2>Map of the Park:</h2>
+    </div>
+    <div class="carousel-item" style="background-image: url('https://i.ytimg.com/vi/cgkizvteN0M/maxresdefault.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
       </div>
-      ​
     </div>
-    <div class="col-6">
-      <h2>Information on the Park Systems</h2>
-      <p style="text-decoration-color: green"> #SAMPLE TEXT
-        "The United States has 61 protected areas known as national parks that are operated by the National Park
-        Service, an agency of the Department of the Interior. National parks must be established by an act of the United
-        States Congress. A bill creating the first national park, Yellowstone, was signed into law by President Ulysses
-        S. Grant in 1872, followed by Mackinac National Park in 1875 (decommissioned in 1895), and then Rock Creek Park
-        (later merged into National Capital Parks), Sequoia and Yosemite in 1890. The Organic Act of 1916 created the
-        National Park Service "to conserve the scenery and the natural and historic objects and wildlife therein, and to
-        provide for the enjoyment of the same in such manner and by such means as will leave them unimpaired for the
-        enjoyment of future generations." Many current national parks had been previously protected as national
-        monuments by the president under the Antiquities Act before being upgraded by Congress. Seven national parks
-        (including six in Alaska) are paired with a national preserve, areas with different levels of protection that
-        are administered together but considered separate units and whose areas are not included in the figures below.
-        Criteria for the selection of national parks include natural beauty, unique geological features, unusual
-        ecosystems, and recreational opportunities (though these criteria are not always considered together). National
-        monuments, on the other hand, are frequently chosen for their historical or archaeological significance.
-        Fourteen national parks are designated UNESCO World Heritage Sites (WHS), while 21 national parks are
-        designated UNESCO Biosphere Reserves (BR). Eight national parks are designated in both UNESCO programs.
-
-        Twenty-nine states have national parks, as do the territories of American Samoa and the United States Virgin
-        Islands. California has the most with nine, followed by Alaska with eight, Utah with five, and Colorado with
-        four. The largest national park is Wrangell–St. Elias in Alaska: at over 8 million acres (32,375 km2), it is
-        larger than each of the nine smallest states. The next three largest parks are also in Alaska. The smallest park
-        is Gateway Arch National Park, Missouri, at approximately 192.83 acres (0.7804 km2). The total area protected by
-        national parks is approximately 52.2 million acres (211,000 km2), for an average of 870 thousand acres (3,500
-        km2) but a median of only 229 thousand acres (930 km2).
-
-        The national parks set a visitation record in 2017, with more than 84 million visitors. The most-visited
-        national park is Great Smoky Mountains National Park in North Carolina and Tennessee, with over 11.3 million
-        visitors in 2017, followed by Arizona's Grand Canyon National Park, with over 6.2 million. In contrast, only
-        11,177 people visited the remote Gates of the Arctic National Park and Preserve in Alaska in the same year.
-
-        A few former national parks are no longer designated as such, or have been disbanded. Other units of the
-        National Park Service (419 altogether) while broadly referred to as national parks within the National Park
-        System do not hold the formal designation in their title." - source: wikipedia.com
-      </p>
-      ​
+    <div class="carousel-item"
+      style="background-image: url('https://www.visitrapidcity.com/sites/default/files/styles/masthead_flex_image/public/BadlandsNP_South%20Dakota%20Tourism%20%283%29.jpg?itok=ovpx3hSO')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
     </div>
-  </div>
-</div>
-​
-</div>
+    <div class="carousel-item"
+      style="background-image: url('http://img-aws.ehowcdn.com/560x560p/s3-us-west-1.amazonaws.com/contentlab.studiod/getty/038137e12ef94f9b9f247fee2fbef0a9')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://cdn0.wideopenspaces.com/wp-content/uploads/2013/12/Reef.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.mountainphotography.com/images/xl/20161011-Sunset-Over-the-Painted-Wall.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.wildlandtrekking.com/blog/wp-content/uploads/2018/03/tracy-zhang-77147-unsplash-e1551228156189.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.myutahparks.com/.image/t_share/MTQ4MzM1NjgyNzg3NTUwOTY0/canyonlands-sky-district-green-river_dp_680.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://cdn.visitutah.com/media/2196/temples-cathedral-valley-capitol-slide.jpg?anchor=center&mode=crop&width=1140&height=760&rnd=131877744930000000&quality=86')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('http://rmcguirephoto.com/wordpress/wp-content/uploads/2009/12/20091223-_DSC3716_17_18_19_20red1.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://visitcamarillo.com/wp-content/uploads/2019/04/Channel-Islands-National-Park.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://cdn2.atlantamagazine.com/wp-content/uploads/sites/4/2016/05/web-_MG_2558.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.unioncreekoregon.com/wp-content/uploads/2017/12/craterlake.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://i1.wp.com/vaultcargo.com/wp-content/uploads/2018/04/Cuyahoga_Valley-Main.jpg?fit=1014%2C664&ssl=1')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.visitcalifornia.com/sites/default/files/styles/welcome_image/public/vc_ca101_nationalparks_deathvalleymesquiteflats_rf_452960329_1280x640.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Every_Road-_Denali_%287945497984%29.jpg/1280px-Every_Road-_Denali_%287945497984%29.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.visitflorida.com/content/visitflorida/en-us/cities/florida-keys/the-keys-dry-tortugas-national-park/_jcr_content/editorial_parsys/vf_image.img.1020.680.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.national-park.com/wp-content/uploads/2016/04/Welcome-to-Everglades-National-Park.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://natgeo.imgix.net/factsheets/thumbnails/GatesOfTheArctic.jpg?auto=compress,format&w=1024&h=560&fit=crop')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://npca.s3.amazonaws.com/images/9321/428de64d-1d97-4c51-8bba-8467771ab7e4-banner.jpg?1447774537')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.tripsavvy.com/thmb/xMd0xPQntvSiTQaSzYpm7PMhRmc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-530664445-594185a25f9b58d58abc3e58.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://npca.s3.amazonaws.com/images/8706/591ff182-b7f9-4da1-9c16-c29e0ace3dc4-banner.jpg?1445970338')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://fivediamondhotelalternatives.com/content/blog/3/winter.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.nationalgeographic.com/content/dam/travel/photos/000/929/92936.ngsversion.1483650018315.adapt.1900.1.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-image: url('https://i.redd.it/pzq8nt5vnsq11.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://2oxg30wj5i43omj954e30yb1-wpengine.netdna-ssl.com/wp-content/uploads/2018/04/shutterstock_124204390.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://blog.theclymb.com/wp-content/uploads/2017/09/Guadalupe-Mountains-National-Park.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://mauiinn.com/wp-content/uploads/2016/05/Haleakala-National-Park-1500x609.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://mediad.publicbroadcasting.net/p/khpr/files/styles/small/public/201408/kilauea-volcano-in-hawaii-2.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1483553141/waterfall-HOTSPRINGS0117.jpg?itok=AzMV3cdF')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://s3.amazonaws.com/images.gearjunkie.com/uploads/2019/02/Indiana-Dunes-National-Park.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.gonomad.com/wp-content/uploads/2003/12/Isle-Royale-National-Park.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://static.rootsrated.com/image/upload/s--kwlnjVIz--/t_rr_large_traditional/gastmsi6lpohixktxfuc.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1e/Katmai_Crater_1980.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://cache-graphicslib.viator.com/graphicslib/page-images/742x525/140756_Seward_KenaiFjordsNationalPark_11211.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('http://images.huffingtonpost.com/2016-12-02-1480713026-5184886-KobukValleyNationalPark006.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ac/Lake_Clark_National_Park.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.visitcalifornia.com/sites/default/files/styles/welcome_image/public/VCW_D_Lassen_T2_BumpassHell_1280x642_downsized.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://i.pinimg.com/originals/f6/8a/62/f68a62dfea50f96f3d442c377a7b1ab5.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-image: url('https://mild2wildrafting.imgix.net/2014/01/IMG_2172.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://media.mnn.com/assets/images/2012/06/MountRanierEuniceLake.jpg.653x0_q80_crop-smart.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.drinkevolve.com/wp-content/uploads/2017/12/DSC09142-WEBSITE.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/80/Cascade_Pass_and_Pelton_Basin.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.doi.gov/sites/doi.gov/files/uploads/olympic_national_park_mountains._photo_by_jason_horstman._ste.jpeg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://themaverickmagazine.com/wp-content/uploads/2016/06/petrified-forest-national-park-680x453.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.visitcalifornia.com/sites/default/files/styles/welcome_image/public/FF_VCW_D_CC_T7%20Pinnacles%20NPPINN_140426_LRu_20_.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.tripsavvy.com/thmb/_nSHL3qBb9zriDEwHqzIaUC-Ets=/2120x1415/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1005095154-5c24bd7646e0fb00015912eb.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('http://res.cloudinary.com/simpleview/image/upload/v1556666848/clients/longmontco/Rocky_Mountain_National_Park_2015_09_Visit_Estes_Park_Credit_Darcy_Kiefel_6__877a95fa-2093-412d-9a54-7743b8f534e0.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.visittheusa.com/sites/default/files/styles/hero_m_1300x700/public/images/hero_media_image/2016-10/Saguaro_0.jpg?itok=dgpThux5')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://odis.homeaway.com/odis/destination/86565114-a429-43cd-b60f-27f518882229.hw5.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.roadtripusa.com/wp-content/uploads/2018/07/Virginia-Skyline-Drive-Shenandoah-National-Park_Sean-Board-iStock.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.ndtourism.com/sites/default/master/files/styles/related_content/public/Teddy%20Roosevelt_002.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://stjohnsource.com/wp-content/uploads/sites/4/2017/12/USVI-Water-Planning-Grant-News-Release-FINAL-December-12.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://cdn3-www.liveoutdoors.com/assets/uploads/2016/07/voyageurs-e1468434480219.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.visitrapidcity.com/sites/default/files/styles/masthead_flex_image/public/Skyway_Lake%2C_stalactites%2C_Wind_Cave.jpg?itok=NnjUS7E3')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://sfo2.digitaloceanspaces.com/cwblog/2018/11/23114210/Mount-St-Elias-1024x682.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.lodgeatbigsky.com/resourcefiles/attractionsmallimages/yellowstone-national-park-montana.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.tripsavvy.com/thmb/OMRlWjMnArpwysRHlDvcUPo04j8=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/10510864996_57022feb3d_o-56a3862c3df78cf7727dda74.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
+    <div class="carousel-item"
+      style="background-image: url('https://www.citrusmilo.com/zion2013/joebraun_obspoint01.jpg')">
+      <div class="carousel-inner text-white text-center p-1 welcome">
+        <h1>Welcome to Hike Buddy!</h1>
+        <h3>Please sign in to navigate to your profile</h3><br><a class="btn btn-lg signIn" type="submit"
+          href="/signIn">Sign in</a>
+      </div>
+    </div>
 
-<br>
-<br>
-<footer class="footer">
-  <div class="container">
-    <span class="text-muted">Copyright: @____________</span>
   </div>
-</footer>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Copyright: @____________</span>
+    </div>
+  </footer>
+
+  <script>
+    $('.carousel').carousel({
+      interval: 3000
+    })
+  </script>

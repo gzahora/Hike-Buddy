@@ -1,84 +1,111 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightgreen">
-  <a class="navbar-brand" href="home/html">National Parks</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Search by:
-        </a>
-        <div class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/searchRanked">Top Parks</a>
-          <a class="dropdown-item" href="/searchState">Location</a>
-          <a class="dropdown-item" href="/searchAlpha">Alphabetical</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Search yourself!</a>
-        </div>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(63, 31, 1);">
+    <img style="height: 100px" src="https://www.nps.gov/cabr/blogs/images/Arrowhead_3.png">
+    <a style="font-family: 'Quicksand', sans-serif; font-size: 40px; font-style: bolder; color: white" class="navbar-brand" href="/">National Parks</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-<div class="container text-center">
-  <div class="jumbotron py-1">
-    <h1 class="display-4">Profile Page</h1>
-    <p class="lead">Welcome to Your Hiking-Buddy Profile</p>
-    <hr class="my-4">
-    <p>You can edit your info, add parks you'd like to visit, and add parks you have already visited.</p>
-  </div>
-</div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li>
+                <ul class="nav nav-pills">
+                    <li><a style="background-color:rgb(1, 71, 1); color: white; " class="btn btn-md" id="ranked" href="/searchRanked">All parks (ranked)</a>&nbsp;&nbsp;&nbsp;</li>
+                    <li><a style="background-color:rgb(1, 71, 1); color: white; " class="btn btn-lrg" id="alpha" href="/searchAlpha">All parks (alphabetical)</a>&nbsp;&nbsp;&nbsp;</li>
+                    <div class="dropdown">
+                        <button style="background-color:rgb(1, 71, 1); color: white; " class="btn btn-lrg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Parks by State
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/searchState/Alaska">Alaska</a>
+                            <a class="dropdown-item" href="/searchState/American Samoa">American Samoa</a>
+                            <a class="dropdown-item" href="/searchState/Arizona">Arizona</a>
+                            <a class="dropdown-item" href="/searchState/Arkansas">Arkansas</a>
+                            <a class="dropdown-item" href="/searchState/California">California</a>
+                            <a class="dropdown-item" href="/searchState/Colorado">Colorado</a>
+                            <a class="dropdown-item" href="/searchState/Florida">Florida</a>
+                            <a class="dropdown-item" href="/searchState/Hawaii">Hawaii</a>
+                            <a class="dropdown-item" href="/searchState/Indiana">Indiana</a>
+                            <a class="dropdown-item" href="/searchState/Kentucky">Kentucky</a>
+                            <a class="dropdown-item" href="/searchState/Maine">Maine</a>
+                            <a class="dropdown-item" href="/searchState/Michigan">Michigan</a>
+                            <a class="dropdown-item" href="/searchState/Minnesota">Minnesota</a>
+                            <a class="dropdown-item" href="/searchState/Missouri">Missouri</a>
+                            <a class="dropdown-item" href="/searchState/Montana">Montana</a>
+                            <a class="dropdown-item" href="/searchState/Nevada">Nevada</a>
+                            <a class="dropdown-item" href="/searchState/New Mexico">New Mexico</a>
+                            <a class="dropdown-item" href="/searchState/North Dakota">North Dakota</a>
+                            <a class="dropdown-item" href="/searchState/Ohio">Ohio</a>
+                            <a class="dropdown-item" href="/searchState/Oregon">Oregon</a>
+                            <a class="dropdown-item" href="/searchState/South Carolina">South Carolina</a>
+                            <a class="dropdown-item" href="/searchState/South Dakota">South Dakota</a>
+                            <a class="dropdown-item" href="/searchState/Texas">Texas</a>
+                            <a class="dropdown-item" href="/searchState/U.S. Virgin Islands">U.S. Virgin Islands</a>
+                            <a class="dropdown-item" href="/searchState/Utah">Utah</a>
+                            <a class="dropdown-item" href="/searchState/Virginia">Virginia</a>
+                            <a class="dropdown-item" href="/searchState/Washington">Washington</a>
+                            <a class="dropdown-item" href="/searchState/Wyoming">Wyoming</a>
+                            <a class="dropdown-item" href="/searchState/Tennessee">Tennessee</a>
+                        </div>
+                    </div>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br>
+<div>
+
+<br>
 
 <div class="container">
   <div class="row">
-    <div class="col-4 text-center">
-      <h2>Profile</h2>
-      <div class="col-6">
-        <img src="http://placehold.it/250x350" alt="" class="img-rounded img-responsive" />
-        <div class="bio">
-          <p>This is a dummy space to put the "PUT" option to update your bio</p>
-        </div>
+    <div class="col-6">
+      <div class="text-center">
+        <h2 style="font-family: 'Quicksand', sans-serif"; ><u>Map of National Parks</u></h2>
+        {{> profile/profile-block}}
       </div>
+      ​
     </div>
-    <div class="col-8 text-center">
-      <div class="row">
-        <div class="col">
-          <h4><u>Parks I've Visited</u></h4>
-          <img src="http://placehold.it/200x200" alt="" class="img-rounded img-responsive" />
-          {{#each park}}
-          {{#unless visited}}
-          {{> profile/profile-block available=true}}
-          {{/unless}}
-          {{/each}}
-        </div>
-      </div>
-      <br><br>
-      <div class="row">
-        <div class="col">
-          <h4><u>Parks I Want to Visit</u></h4>
-          <img src="http://placehold.it/200x200" alt="" class="img-rounded img-responsive" />
-          {{#each park}}
-          {{#if visited}}
-          {{> profile/profile-block available=false}}
-          {{/if}}
-          {{/each}}
-        </div>
-      </div>
+    <div class="col-6">
+      <h2  class="text-center"><u>Information on the Park Systems</u></h2>
+      <p>
+        "The United States has 61 protected areas known as national parks that are operated by the National Park
+        Service, an agency of the Department of the Interior. National parks must be established by an act of the United
+        States Congress. 
+      </p>
+      <p>
+        A bill creating the first national park, Yellowstone, was signed into law by President Ulysses
+        S. Grant in 1872, followed by Mackinac National Park in 1875 (decommissioned in 1895), and then Rock Creek Park
+        (later merged into National Capital Parks), Sequoia and Yosemite in 1890. The Organic Act of 1916 created the
+        National Park Service "to conserve the scenery and the natural and historic objects and wildlife therein, and to
+        provide for the enjoyment of the same in such manner and by such means as will leave them unimpaired for the
+        enjoyment of future generations."
+      </p>
+      <p>
+        Criteria for the selection of national parks include natural beauty, unique geological features, unusual
+        ecosystems, and recreational opportunities (though these criteria are not always considered together).
+      </p>
+      <p>
+        Twenty-nine states have national parks, as do the territories of American Samoa and the United States Virgin
+        Islands. California has the most with nine, followed by Alaska with eight, Utah with five, and Colorado with
+        four. The largest national park is Wrangell–St. Elias in Alaska: at over 8 million acres (32,375 km2), it is
+        larger than each of the nine smallest states. The next three largest parks are also in Alaska. The smallest park
+        is Gateway Arch National Park, Missouri, at approximately 192.83 acres (0.7804 km2). The total area protected by
+        national parks is approximately 52.2 million acres (211,000 km2), for an average of 870 thousand acres (3,500
+        km2) but a median of only 229 thousand acres (930 km2)."
+      </p>
+      ​
     </div>
   </div>
 </div>
+​
+</div>
 
+<br>
+<br>
 <footer class="footer">
   <div class="container">
     <span class="text-muted">Copyright: @____________</span>
   </div>
 </footer>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
