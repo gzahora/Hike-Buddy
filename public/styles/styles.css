@@ -1,4 +1,4 @@
-body {
+/* body {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: blanchedalmond;
@@ -36,7 +36,7 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}
+} */
 
 .footer {
     position: absolute;
@@ -53,6 +53,14 @@ body {
       width: 100%;
     }
   }
-  body{
-    background-image: url("https://us.123rf.com/450wm/parmenov/parmenov1802/parmenov180200067/95660948-topographic-map-lines-earth-relief-contour-background-geographic-grid-elevation-map-vector-abstract-.jpg?ver=6");
+  /* body{
+    background-color: blanchedalmond;
+    background-image: url("https://www.nps.gov/cabr/blogs/images/Arrowhead_3.png");
+    margin-left: 500px; 
+    height: 700px; 
+    opacity: .05;
+  } */
+
+  .card {
+    background-image: url("https://us.123rf.com/450wm/parmenov/parmenov1802/parmenov180200067/95660948-topographic-map-lines-earth-relief-contour-background-geographic-grid-elevation-map-vector-abstract-.jpg?ver=6"); border: 2px solid rgb(1, 71, 1);
   }
