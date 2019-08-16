@@ -60,12 +60,12 @@
 {{#each parks}}
 <div class="containter ml-5">
     <div class="col-4" style="float: left">
-        <div class="card my-2" style="width: 22rem; height: 24rem;">
+        <div class="card my-2" style="width: 22rem; height: 30rem;">
             <img src={{this.image}} class="card-img-top" alt="..." style="width: 21.8rem; height: 14rem;">
             <div class="card-body">
-                <h5 class="card-title">{{this.park_name}}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Rank: {{this.ranking}}</h6>
-                <h6 class="card-subtitle mb-2 text-muted">State(s): {{this.state_name}}</h6>
+                <h4 class="card-title">{{this.park_name}}</h4>
+                <h5 class="card-subtitle mb-2 py-1">Rank: {{this.ranking}}</h5>
+                <h5 class="card-subtitle mb-2 py-1">State(s): {{this.state_name}}</h5>
                 <a class="btn btn-sm btn-success" href={{this.url}} class="card-link">Park Website</a>
                 &nbsp;&nbsp;
                 <a class="btn btn-sm btn-success" href={{this.map}} class="card-link">Hiking Guide/Park Map</a>

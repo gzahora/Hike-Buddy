@@ -1,44 +1,37 @@
-
-
-{{!-- <div class="container">
-    <form id="signin" name="signin" method="post" action="signin">
-        <label for="email">Email Address</label>
-        <input class="text" name="email" type="text" />
-        <label for="password">Password</label>
-        <input name="password" type="password" />
-        <input class="btn" type="submit" value="Sign In" />
-    </form>
-</div>
-<div>
-    <input class="btn" type="signup" value="Don't have an account then sign up here"/>
-</div> --}}
-
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(63, 31, 1); ">
+    <img style="height: 100px" src="https://www.nps.gov/cabr/blogs/images/Arrowhead_3.png">
+    <a style="font-family: 'Quicksand', sans-serif; font-size: 40px; font-style: bolder; color: white"
+        class="navbar-brand" href="/profile">National Parks</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    </nav>
+<div style="width: 500px" class="container">
+<br style="line-height: 100px">
 <div style="align-content: center"; class="container">
-    <form class="form-signin" method="post" action="/signin">
-          <h2 class="form-signin-heading">Please sign in</h2>
-          <br>
-          <label for="email" class="text">Email Address</label>
-          <input type="email" id="email" name="email" class="text" placeholder="Email address" required autofocus>
-          <br>
-          <label for="password" class="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Password" required>
-          <br>
-          {{!-- <div class="checkbox">
-            <label>
-              <input type="checkbox" value="remember-me"> Remember me
-            </label>
-          </div> --}}
-          <input class="btn" type="submit" value="Sign In" />
-          ​
-          <div class="card-footer ">
+    <form style="text-align:center; border: 2px solid rgb(1, 71, 1); padding:4px 4px; font-family: 'Viga', sans-serif" class="form-signin" method="post" action="/signin">
+        <br style="line-break: 20px">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <br>
+        <label for="email" class="text">Email Address: </label>
+        <input type="email" id="email" name="email" class="text" placeholder="Email address" required autofocus>
+        <br>
+        <label style="margin-left: 35px" for="password" class="password">Password: </label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <br>
+       
+        <input style="background:rgb(2, 141, 2); color:white;"class="btn" type="submit" value="Sign In" />
+        ​<br style="line-height: 50px">
+        <div class="card-footer ">
             <div class="d-flex justify-content-center links">
-              Don't have an account yet?<a href="/signup">Sign Up</a>
+                Don't have an account yet?<a href="/signup">Sign Up</a>
             </div>
             <div class="d-flex justify-content-center">
-              <a href="#">Forgot your password?</a>
+                <a href="#">Forgot your password?</a>
             </div>
-          </div>
-        </form>
+        </div>
+    </form>
 </div>
 
 
@@ -50,10 +43,3 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <br>
 <br>
-<footer class="footer">
-    <div class="container">
-        <span class="text-muted">Copyright: @____________</span>
-    </div>
-</footer>
-
-
