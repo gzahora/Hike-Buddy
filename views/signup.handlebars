@@ -1,16 +1,32 @@
-<div class="container">
-    <form id="signup" name="signup" method="post" action="/signup">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(63, 31, 1); ">
+    <img style="height: 100px" src="https://www.nps.gov/cabr/blogs/images/Arrowhead_3.png">
+    <a style="font-family: 'Quicksand', sans-serif; font-size: 40px; font-style: bolder; color: white"
+        class="navbar-brand" href="/profile">National Parks</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    </nav>
+<div style="width: 500px" class="container">
+    <br style="line-height: 100px">
+    <div style="align-content: center"; class="container">
+    <form style="text-align:center; border: 2px solid rgb(1, 71, 1); padding:20px 20px; font-family: 'Viga', sans-serif" id="signup" name="signup" method="post" action="/signup">
     <h2>Complete the following form to create an account:</h2>
         <label for="email">Email Address</label>
         <input class="text" name="email" type="email" />
-        <label for="firstname">Firstname</label>
+        <br>
+        <label style="margin-left: 27px;"for="firstname">Firstname</label>
         <input name="firstname" type="text" />
-        <label for="lastname">Lastname</label>
+        <br>
+        <label style="margin-left: 31px;"for="lastname">Lastname</label>
         <input name="lastname" type="text" />
-        <label for="password">Password</label>
+        <br>
+        <label style="margin-left: 31px;" for="password">Password</label>
         <input name="password" type="password" />
-        <input class="btn" type="submit" value="Sign Up" />  
+        <br>
+        <input style="background: rgb(2, 141, 2); color: white;" class="btn" type="submit" value="Sign Up" />  
     </form>
+    </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -19,10 +35,4 @@
 
 <!-- Bootstrap JavaScript CDN -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<br>
-<br>
-<footer class="footer">
-    <div class="container">
-        <span class="text-muted">Copyright: @____________</span>
-    </div>
-</footer>
+
