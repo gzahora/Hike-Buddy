@@ -2,7 +2,7 @@
 
 ## Authors
 
-**Greg Zahora, Hawk Shannon, & Saaski Gundecha** 
+**Greg Zahora, Hawk Shannon, & Saakshi Gundecha** 
 
 - - -
 
